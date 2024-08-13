@@ -1,0 +1,25 @@
+-series GW2AR
+-device GW2AR-18
+-device_version C
+-package QFN88
+-part_number GW2AR-LV18QN88C8/I7
+
+
+-mod_name AddressMultiplicator
+-file_name AddressMultiplicator
+-path C:/GIT/FPGA_Stuff/Tang_Nano/TEst/src/gowin_mult/
+-type MULT
+-file_type vlg
+-source_a parallel
+-source_b parallel
+-width_a 7
+-width_b 7
+-data_type_a unsigned
+-data_type_b unsigned
+-en_shiftout_a false
+-en_shiftout_b false
+-reset_mode sync
+-ina_reg registered
+-inb_reg registered
+-pipe_reg bypass
+-out_reg registered

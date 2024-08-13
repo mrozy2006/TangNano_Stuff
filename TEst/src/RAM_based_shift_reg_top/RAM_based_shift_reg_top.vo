@@ -1,0 +1,123 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Simulation Model file
+//Tool Version: V1.9.9.03 Education (64-bit)
+//Created Time: Sat Aug 10 16:25:44 2024
+
+`timescale 100 ps/100 ps
+module RAM_based_shift_reg_top(
+	clk,
+	Reset,
+	Din,
+	Q
+);
+input clk;
+input Reset;
+input [5:0] Din;
+output [5:0] Q;
+wire [5:0] Din;
+wire GND;
+wire [5:0] Q;
+wire Reset;
+wire VCC;
+wire clk;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 ;
+wire \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR (
+	.GSRI(VCC)
+);
+DFFC \u_RAM_based_shift_reg/wdata_q_5_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[5])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_5_s0 .INIT=1'b0;
+DFFC \u_RAM_based_shift_reg/wdata_q_4_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[4])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_4_s0 .INIT=1'b0;
+DFFC \u_RAM_based_shift_reg/wdata_q_3_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[3])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_3_s0 .INIT=1'b0;
+DFFC \u_RAM_based_shift_reg/wdata_q_2_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[2])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_2_s0 .INIT=1'b0;
+DFFC \u_RAM_based_shift_reg/wdata_q_1_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[1])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_1_s0 .INIT=1'b0;
+DFFC \u_RAM_based_shift_reg/wdata_q_0_s0  (
+	.D(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 ),
+	.CLK(clk),
+	.CLEAR(Reset),
+	.Q(Q[0])
+);
+defparam \u_RAM_based_shift_reg/wdata_q_0_s0 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_s1  (
+	.D(Din[5]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[5]_s1 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_s1  (
+	.D(Din[4]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[4]_s1 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_s1  (
+	.D(Din[3]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[3]_s1 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_s1  (
+	.D(Din[2]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[2]_s1 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_s1  (
+	.D(Din[1]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[1]_s1 .INIT=1'b0;
+DFFR \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_s1  (
+	.D(Din[0]),
+	.CLK(clk),
+	.RESET(Reset),
+	.Q(\u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_3 )
+);
+defparam \u_RAM_based_shift_reg/mem_mem_RAMREG_0_G[0]_s1 .INIT=1'b0;
+endmodule
