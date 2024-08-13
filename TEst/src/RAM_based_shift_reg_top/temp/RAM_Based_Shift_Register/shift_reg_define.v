@@ -1,1 +1,0 @@
-`define SSRAM_BASED
