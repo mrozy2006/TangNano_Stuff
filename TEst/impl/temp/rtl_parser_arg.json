@@ -1,0 +1,49 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/Buffer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/CustomDemux.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/CustomMux.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/Demux1to4.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/Mux4to1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/SR_FF.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/GIT/TangNano_Stuff/TEst/impl/temp/rtl_parser.result",
+ "Top" : "TEst",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

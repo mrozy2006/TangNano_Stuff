@@ -1,0 +1,55 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\Buffer.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\Demux1to4.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\Mux4to1.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\OE.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\TEst.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\CustomMux.v'
+Analyzing Verilog file 'C:\GIT\TangNano_Stuff\TEst\src\CustomDemux.v'
+Compiling module 'TEst'("C:\GIT\TangNano_Stuff\TEst\src\TEst.v":1)
+WARN  (EX3073) : Port 'q' remains unconnected for this instance("C:\GIT\TangNano_Stuff\TEst\src\OE.v":44)
+WARN  (EX3073) : Port 'q' remains unconnected for this instance("C:\GIT\TangNano_Stuff\TEst\src\OE.v":45)
+Compiling module 'OE(ColorDepth=5,LSBOnTime=2500)'("C:\GIT\TangNano_Stuff\TEst\src\OE.v":2)
+Compiling module 'Buffer'("C:\GIT\TangNano_Stuff\TEst\src\Buffer.v":1)
+Compiling module 'CustomDemux(CHANNELS=5)'("C:\GIT\TangNano_Stuff\TEst\src\CustomDemux.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=16,MOD=2500)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=16,MOD=5000)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=16,MOD=10000)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=16,MOD=20000)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=16,MOD=40000)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'CustomMux(CHANNELS=5)'("C:\GIT\TangNano_Stuff\TEst\src\CustomMux.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=4'd3,MOD=3'd1)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'OneTimeCounterWcout(BUS_WIDTH=4'd11,MOD=11'd1200)'("C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v":1)
+Compiling module 'SR_FF'("C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v":1)
+WARN  (EX3779) : 'qReg' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v":23)
+WARN  (EX2420) : Latch inferred for net 'qReg'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v":25)
+Compiling module 'freqDiv'("C:\GIT\TangNano_Stuff\TEst\src\TEst.v":18)
+WARN  (EX1998) : Net 'ledd[5]' does not have a driver("C:\GIT\TangNano_Stuff\TEst\src\TEst.v":7)
+NOTE  (EX0101) : Current top module is "TEst"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input KEY is unused("C:\GIT\TangNano_Stuff\TEst\src\TEst.v":3)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+WARN  (DI0003) : Latch inferred for net 'qReg';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v":25)
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "freqDiv" instantiated to "TestFreqDiv" is swept in optimizing("C:\GIT\TangNano_Stuff\TEst\src\TEst.v":12)
+WARN  (NL0002) : The module "Buffer" instantiated to "ClkBuffer" is swept in optimizing("C:\GIT\TangNano_Stuff\TEst\src\OE.v":24)
+WARN  (NL0002) : The module "CustomMux" instantiated to "OutputMux" is swept in optimizing("C:\GIT\TangNano_Stuff\TEst\src\OE.v":42)
+[95%] Generate netlist file "C:\GIT\TangNano_Stuff\TEst\impl\gwsynthesis\TEst.vg" completed
+[100%] Generate report file "C:\GIT\TangNano_Stuff\TEst\impl\gwsynthesis\TEst_syn.rpt.html" completed
+GowinSynthesis finish

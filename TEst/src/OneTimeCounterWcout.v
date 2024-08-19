@@ -7,21 +7,22 @@ module OneTimeCounterWcout
     input clk,
     input rst,
     output cout,
-    output [BUS_WIDTH-1:0] q
+    output [BUS_WIDTH-1:0] q,
+    output counterState
 );
 
 reg [BUS_WIDTH-1:0] count = 0;
 reg cout_reg = 0;
 reg rstFlag = 0;
+reg stateReg = 1;
+
+
 assign q = count;
 assign cout = cout_reg;
-initial begin
-count <= 0;
-cout_reg <= 0;
-rstFlag <= 0;
-end
+assign counterState = stateReg;
 always @(posedge clk or posedge rst) begin
     if (rst) begin
+        stateReg <= 1;
         count <= 0;
         cout_reg <= 0;
         rstFlag <= 0;
@@ -30,6 +31,7 @@ always @(posedge clk or posedge rst) begin
     end else if ((count == (MOD-1)) && !rstFlag) begin
         cout_reg <= 1'b1;
         rstFlag <= 1'b1;
+        stateReg <= 0;
     end else if (rstFlag) begin
         cout_reg <= 0;
     end

@@ -1,28 +1,26 @@
 module SR_FF 
 (
     input clk,
-    input d,
     input s,
     input r,
     output q
 );
 
-    reg qReg;
+    reg qReg = 1'b1;
     assign q = qReg;
-
-    always @(posedge clk or posedge s or posedge r)
+    always @(s or r)
     begin
-        if (r)
-        begin
-            qReg <= 1'b0;
-        end
-        else if (s)
+        if (s && !r)
         begin
             qReg <= 1'b1;
         end
-        else if (clk)
+        else if (!s && r)
         begin
-            qReg <= d;
+            qReg <= 1'b0;
+        end
+        else
+        begin
+            qReg <= qReg;
         end
     end
 

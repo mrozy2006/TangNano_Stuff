@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\Buffer.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\Demux1to4.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\Mux4to1.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\OE.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\OneTimeCounterWcout.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\SR_FF.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\TEst.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\CustomMux.v" type="verilog"/>
+        <File path="C:\GIT\TangNano_Stuff\TEst\src\CustomDemux.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\GIT\TangNano_Stuff\TEst\impl\gwsynthesis\TEst.vg"/>
+        <Option type="print_all_synthesis_warning" value="1"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="TEst"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

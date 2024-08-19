@@ -6,8 +6,11 @@
     <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
     <FileList>
         <File path="src/Buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/CustomDemux.v" type="file.verilog" enable="1"/>
+        <File path="src/CustomMux.v" type="file.verilog" enable="1"/>
         <File path="src/Demux1to4.v" type="file.verilog" enable="1"/>
         <File path="src/Mux4to1.v" type="file.verilog" enable="1"/>
+        <File path="src/OE.v" type="file.verilog" enable="1"/>
         <File path="src/OneTimeCounterWcout.v" type="file.verilog" enable="1"/>
         <File path="src/SR_FF.v" type="file.verilog" enable="1"/>
         <File path="src/TEst.v" type="file.verilog" enable="1"/>

@@ -1,0 +1,134 @@
+[
+ {
+  "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/Demux1to4.v",
+  "InstLine" : 1,
+  "InstName" : "Demux1to4",
+  "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/Demux1to4.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "Demux1to4"
+ },
+ {
+  "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/Mux4to1.v",
+  "InstLine" : 1,
+  "InstName" : "Mux4to1",
+  "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/Mux4to1.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "Mux4to1"
+ },
+ {
+  "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+  "InstLine" : 1,
+  "InstName" : "TEst",
+  "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "TEst",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+    "InstLine" : 11,
+    "InstName" : "TestOE",
+    "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "OE",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 24,
+      "InstName" : "ClkBuffer",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/Buffer.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "Buffer"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 26,
+      "InstName" : "InputDemux",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/CustomDemux.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "CustomDemux"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 31,
+      "InstName" : "CounterGen[0].Xcounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 31,
+      "InstName" : "CounterGen[1].Xcounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 31,
+      "InstName" : "CounterGen[2].Xcounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 31,
+      "InstName" : "CounterGen[3].Xcounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 31,
+      "InstName" : "CounterGen[4].Xcounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 42,
+      "InstName" : "OutputMux",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/CustomMux.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "CustomMux"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 44,
+      "InstName" : "SRSafetyDelay",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 45,
+      "InstName" : "SignalCounter",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/OneTimeCounterWcout.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "OneTimeCounterWcout"
+     },
+     {
+      "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/OE.v",
+      "InstLine" : 47,
+      "InstName" : "BufferSR",
+      "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/SR_FF.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "SR_FF"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+    "InstLine" : 12,
+    "InstName" : "TestFreqDiv",
+    "ModuleFile" : "C:/GIT/TangNano_Stuff/TEst/src/TEst.v",
+    "ModuleLine" : 18,
+    "ModuleName" : "freqDiv"
+   }
+  ]
+ }
+]

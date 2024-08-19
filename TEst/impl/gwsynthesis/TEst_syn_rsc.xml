@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="TEst" Lut="18" T_Register="109(0)" T_Alu="85(0)" T_Lut="95(18)">
+    <SubModule name="TestOE" Register="3" Lut="7" T_Register="109(3)" T_Alu="85(0)" T_Lut="77(7)">
+        <SubModule name="InputDemux" Lut="6" T_Lut="6(6)"/>
+        <SubModule name="CounterGen[0].Xcounter" Register="18" Alu="15" Lut="10" T_Register="18(18)" T_Alu="15(15)" T_Lut="10(10)"/>
+        <SubModule name="CounterGen[1].Xcounter" Register="18" Alu="15" Lut="10" T_Register="18(18)" T_Alu="15(15)" T_Lut="10(10)"/>
+        <SubModule name="CounterGen[2].Xcounter" Register="18" Alu="15" Lut="10" T_Register="18(18)" T_Alu="15(15)" T_Lut="10(10)"/>
+        <SubModule name="CounterGen[3].Xcounter" Register="18" Alu="15" Lut="11" T_Register="18(18)" T_Alu="15(15)" T_Lut="11(11)"/>
+        <SubModule name="CounterGen[4].Xcounter" Register="18" Alu="15" Lut="11" T_Register="18(18)" T_Alu="15(15)" T_Lut="11(11)"/>
+        <SubModule name="SRSafetyDelay" Register="2" Lut="1" T_Register="2(2)" T_Lut="1(1)"/>
+        <SubModule name="SignalCounter" Register="13" Alu="10" Lut="9" T_Register="13(13)" T_Alu="10(10)" T_Lut="9(9)"/>
+        <SubModule name="BufferSR" Register="1" Lut="2" T_Register="1(1)" T_Lut="2(2)"/>
+    </SubModule>
+</Module>
